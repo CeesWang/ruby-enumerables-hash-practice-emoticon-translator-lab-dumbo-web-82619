@@ -1,13 +1,10 @@
 # require modules here
 require "yaml"
 def load_library(file_name)
-  hash ={}
-  hash[:get_meaning] = {}
-  hash[:get_emoticon] = {}
+  hash = {:get_meaning => {}, :get_emoticon => {}}
   emoticons = YAML.load_file(file_name)
   emoticons.each do |meaning, emoji|
-    hash[:get_meaning] = {emoji => meaning}
-    
+    hash[:get_meaning]
   end
 
   hash
