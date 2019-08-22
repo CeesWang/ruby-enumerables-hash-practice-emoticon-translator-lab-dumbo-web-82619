@@ -5,6 +5,7 @@ def load_library(file_name)
   emoticons = YAML.load_file(file_name)
   emoticons.each do |meaning, emoji|
     # hash[:get_meaning].push(emoji[1] => meaning)
+    
   end
 
   hash
