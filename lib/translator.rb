@@ -6,6 +6,7 @@ def load_library(file_name)
   emoticons.each do |meaning, emoji|
     hash[:get_meaning][emoji[1]] = meaning
     
+    
   end
 
   hash
